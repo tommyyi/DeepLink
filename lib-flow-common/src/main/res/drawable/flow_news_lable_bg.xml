@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@android:color/transparent"/>
+
+    <corners android:radius="3dp"/>
+
+    <padding
+        android:left="3dp"
+        android:right="3dp"
+        android:bottom="1.5dp"/>
+
+    <stroke
+        android:width="1px"
+        android:color="@color/news_lable_color"/>
+
+</shape>

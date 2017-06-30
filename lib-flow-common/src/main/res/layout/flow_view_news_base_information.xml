@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_news_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/flow_news_lable_bg"
+        android:gravity="center"
+        android:textColor="@color/news_lable_color"
+        android:textSize="9sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_news_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@id/tv_news_label"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:textColor="@color/news_base_info_color"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tv_news_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@id/tv_news_source"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:textColor="@color/news_base_info_color"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_news_popularity"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:textColor="@color/news_base_info_color"
+        android:textSize="11sp"/>
+
+
+    <com.laser.ui.widget.LargeTouchableAreasImageView
+        android:id="@+id/iv_news_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:src="@drawable/flow_ic_item_close"/>
+
+
+</RelativeLayout>

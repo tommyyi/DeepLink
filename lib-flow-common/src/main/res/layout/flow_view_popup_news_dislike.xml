@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/news_dislike_pop_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/news_dislike_pop_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flow_news_dislike_pop_bg"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_news_dislike_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="可选内容，精准屏蔽"
+                android:textSize="13dp"
+                android:textColor="@color/news_filter_words_color_nor"/>
+
+            <TextView
+                android:id="@+id/tv_news_dislike_commit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/flow_selector_news_dislike_commit"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="16sp"
+                android:text="不感兴趣"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/news_dislike_filter_words_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/news_dislike_pop_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

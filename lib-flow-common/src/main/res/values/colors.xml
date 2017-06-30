@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">#dddddd</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="dividing_line_color">#dddddd</color>
+    <color name="text_color_gray">#9B9B9B</color>
+
+    <color name="prgress_color">#ff1d8e77</color>
+    <color name="prgress_bg_color">#ffdddddd</color>
+
+    <color name="tab_selected">#F85959</color>
+    <color name="tab_normal">@color/black</color>
+
+    <color name="pop_item_text_color_normal">#e6000000</color>
+    <color name="pop_item_text_color_press">#ffe6e6ec</color>
+    <color name="hot">#ffed6d1e</color>
+    <color name="hot_size">#8c000000</color>
+
+    <color name="news_lable_color">#ffF16969</color>
+    <color name="news_title_color_nor">#ff000000</color>
+    <color name="news_title_color_readed">#8c000000</color>
+    <color name="news_base_info_color">#8c000000</color>
+    <color name="news_filter_words_color_nor">#cc000000</color>
+    <color name="news_filter_words_color_selected">#ff1ea7eb</color>
+    <color name="news_filter_words_color_nor_bg">#26000000</color>
+    <color name="news_filter_words_color_selected_bg">#ff1ea7eb</color>
+
+    <color name="retry_btn_bg_color_pressed">#449B9B9B</color>
+    <color name="retry_btn_bg_color_nor">@color/white</color>
+    <color name="retry_btn_color_pressed">#ff6ca8c6</color>
+    <color name="retry_btn_color_nor">#ff1ea7eb</color>
+
+    <color name="advert_native_inter_text">#ff000000</color>
+</resources>

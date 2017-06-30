@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.laser.flowcommon">
+
+    <application>
+        <activity
+            android:name="com.laser.ui.WebActivity"
+            android:theme="@style/BaseAppTheme"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

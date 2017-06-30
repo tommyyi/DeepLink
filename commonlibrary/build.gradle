@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+def properties = project(':commonlibrary').getExtensions().extraProperties
+int mCompileSdkVersion = Integer.valueOf(properties.compileSdkVersion)
+def mBuildToolsVersion = properties.buildToolsVersion
+int mMinSdkVersion = Integer.valueOf(properties.minSdkVersion)
+def recyclerview = properties.recyclerview
+def design = properties.design
+def appcompat = properties.appcompat
+def retrofit = properties.retrofit
+def eventbus = properties.eventbus
+def gson = properties.gson
+
+android {
+    compileSdkVersion mCompileSdkVersion
+    buildToolsVersion mBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion mMinSdkVersion
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile appcompat
+    compile design
+    compile recyclerview
+    compile retrofit
+    compile eventbus
+    compile gson
+}

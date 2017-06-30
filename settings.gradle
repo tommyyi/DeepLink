@@ -1,1 +1,1 @@
-include ':app'
+include ':app','lib-flow-manager','commonlibrary','lib-flow-common'

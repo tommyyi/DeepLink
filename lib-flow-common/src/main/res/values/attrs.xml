@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NewsBaseInfoView">
+        <attr name="news_source" format="string|reference"/>
+        <attr name="news_popularity" format="string|reference"/>
+        <attr name="news_time" format="string|reference"/>
+        <attr name="news_lable" format="string|reference"/>
+        <attr name="news_dislike_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>>
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+</resources>

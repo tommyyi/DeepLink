@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+def common = project(':commonlibrary')
+def recyclerview = common.getExtensions().extraProperties.recyclerview
+def appcompat = common.getExtensions().extraProperties.appcompat
+def retrofit = common.getExtensions().extraProperties.retrofit
+int mCompileSdkVersion = Integer.valueOf(common.getExtensions().extraProperties.compileSdkVersion)
+def mBuildToolsVersion = common.getExtensions().extraProperties.buildToolsVersion
+int mMinSdkVersion = Integer.valueOf(common.getExtensions().extraProperties.minSdkVersion)
+
+android {
+    compileSdkVersion mCompileSdkVersion
+    buildToolsVersion mBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion mMinSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile project(':commonlibrary')
+}

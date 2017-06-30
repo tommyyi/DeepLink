@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DeepLink.iml" filepath="$PROJECT_DIR$/DeepLink.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonlibrary/commonlibrary.iml" filepath="$PROJECT_DIR$/commonlibrary/commonlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-flow-common/lib-flow-common.iml" filepath="$PROJECT_DIR$/lib-flow-common/lib-flow-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-flow-manager/lib-flow-manager.iml" filepath="$PROJECT_DIR$/lib-flow-manager/lib-flow-manager.iml" />
     </modules>
   </component>
 </project>
